@@ -111,15 +111,15 @@ describe('POST /risk', () => {
       actions: [
         {
           timestamp: '2022-01-01 10:05:11',
-          action: 'testing an interview takehome',
-          unit: 'floor',
-          quantity: 10,
+          action: 'living one lifetime',
+          unit: 'quantity',
+          quantity: 1,
         },
         {
           timestamp: '2022-01-01 10:05:11',
-          action: 'testing an interview takehome',
-          unit: 'floor',
-          quantity: 20,
+          action: 'living one lifetime',
+          unit: 'quantity',
+          quantity: 2,
         },
       ],
     };
@@ -127,7 +127,7 @@ describe('POST /risk', () => {
     const response = await request(app).post('/risk').send(requestBody);
 
     expect(response.status).toBe(200)
-    expect(response.body.micromorts).toBe(30);
+    expect(response.body.micromorts).toBe(3000000);
     expect(response.body.commuterId).toBe('COM-111');
   });
 });

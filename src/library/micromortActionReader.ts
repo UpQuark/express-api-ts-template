@@ -10,6 +10,7 @@ function getActionMicromortsPerUnit(action: string, quantity: number): number {
     'running': 0.001,
     'eating a muffin': 0.0001,
     'eating peanuts': 0.002,
+    'living one lifetime': 1000000,
   };
 
   return (micromortsPerUnit[action] || 0) * quantity;
