@@ -21,7 +21,7 @@
  */
 import Action from "./Action";
 
-export interface RiskyActivitiesRequest {
+interface RiskyActivitiesRequest {
   commuterId: string;
   actions: Action[];
 }

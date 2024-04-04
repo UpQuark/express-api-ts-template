@@ -8,7 +8,7 @@
  *   "quantity": 3
  * }
  */
-export interface Action {
+interface Action {
   timestamp: string;
   action: string;
   unit: "mile" | "floor" | "minute" | "quantity";
